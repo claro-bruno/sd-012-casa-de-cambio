@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.exchaasdasngerate.host/latest';
+const BASE_URL = 'https://api.exchangerate.host/latest';
 const ERROR_MESSAGE = 'Algo de errado não está certo, tente novamente mais tarde!';
 
 const currencyList = document.querySelector('#currency-list');
@@ -55,6 +55,5 @@ function setupEvents(){
 
 window.onload = () => {
   setupEvents(); 
-  const promise = fetchCurrencyAsync('BRL');
-  console.log('ainda não resolveu la em cima', promise)
+  fetchCurrencyAsync('BRL');
 }  
